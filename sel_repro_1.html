@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Repro</title>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mydiv">Click me!</div>
+        <script>
+            $('#mydiv').click(function() { $('#mydiv').html("You have clicked me!") });
+        </script>
+    </body>
+</html>
