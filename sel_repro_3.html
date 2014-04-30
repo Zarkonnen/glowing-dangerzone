@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Repro</title>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id="mydiv">Click me!</div>
+        <script>
+            $('#mydiv').click(function() {
+                if (confirm("You have clicked me!")) {
+                    $('#resultdiv').html("yes");
+                } else {
+                    $('#resultdiv').html("no");
+                }
+            });
+        </script>
+        <div id="resultdiv">Hello!</div>
+    </body>
+</html>
