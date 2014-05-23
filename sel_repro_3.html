@@ -9,6 +9,7 @@
         <div id="mydiv">Click me!</div>
         <script>
             $('#mydiv').click(function() {
+                $('#resultdiv').html("clicked");
                 if (confirm("You have clicked me!")) {
                     $('#resultdiv').html("yes");
                 } else {
