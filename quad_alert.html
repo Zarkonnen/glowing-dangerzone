@@ -1,0 +1,14 @@
+<html>
+  <head><title>Quad Alert!</title></head>
+  <body>
+    <script>
+      var funs = [];
+      for (var i = 0; i < 4; i++) {
+        funs.push(function() { alert(i); });
+      }
+      for (var x = 0; x < 4; x++) {
+        funs[x]();
+      }
+    </script>
+  </body>
+</html>
