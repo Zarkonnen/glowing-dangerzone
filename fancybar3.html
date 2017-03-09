@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Fancy progress bar with metal effect, by David Stark. Feel free to use in your projects. -->
+<head>
+<style>
+@keyframes pulsate {
+    0% {
+        background: #9999ff;
+        box-shadow: inset 0 0 10px white, 0px 0px 25px #aaaaff;
+    }
+    50% {
+        background: #aaaaff;
+        box-shadow: inset 0 0 10px white, 0px 0px 50px #aaaaff;
+    }
+    100% {
+        background: #9999ff;
+        box-shadow: inset 0 0 10px white, 0px 0px 25px #aaaaff;
+    }
+}
+@keyframes swirl {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 800px 800px;
+    }
+}
+@keyframes swirlbackwards {
+    100% {
+        background-position: 800px 0px;
+    }
+    0% {
+        background-position: 0px 800px;
+    }
+}
+body {
+    background: #222222;
+    color: white;
+}
+.po2 {
+    margin: auto;
+    margin-top: 200px;
+    width: 300px;
+    height: 30px;
+    border-radius: 19px;
+    border: 4px solid #999999;
+    box-shadow: 0px 0px 10px black;
+}
+.po {
+    width: 300px;
+    height: 30px;
+    background: linear-gradient(to bottom, #111111 0%, #252525 65%, #282828 75%, #252525 85%, #272727 100%);
+    border-radius: 15px;
+}
+.pi {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    width: 180px;
+    height: 28px;
+    background: #9999ff;
+    animation-name: pulsate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	border-radius: 14px;
+	overflow: hidden;
+}
+.pi2 {
+    background-image: url('whorls2.png');
+    width: 100%;
+    height: 100%;
+    animation-name: swirlbackwards;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.pi3 {
+    background-image: url('whorls1.png');
+    width: 100%;
+    height: 100%;
+    animation-name: swirl;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+</style>
+</head>
+<body>
+<div class="po2"><div class="po"><div class="pi"><div class="pi2"><div class="pi3"></div></div></div></div></div>
+</body>
+</html>
