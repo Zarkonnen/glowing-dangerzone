@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Fancy progress bar with metal effect, by David Stark. Feel free to use in your projects. -->
+<head>
+<style>
+body {
+    background: #222222;
+    color: white;
+}
+.po2 {
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+    width: 278px;
+    height: 34px;
+}
+.po {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background: linear-gradient(to bottom, #111111 0%, #252525 65%, #282828 75%, #252525 85%, #272727 100%);
+    border-top-left-radius: 3px 15px;
+	border-bottom-left-radius: 3px 15px;
+	border-top-right-radius: 3px 15px;
+	border-bottom-right-radius: 3px 15px;
+    border: 2px solid #666666;
+}
+.pi {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    width: 18px;
+    height: 28px;
+    background: radial-gradient(60% 100% at 40% 30%, #ff4444 0%, #cc0000 50%, #770000 100%);
+	overflow: hidden;
+	border-top-left-radius: 2px 14px;
+	border-bottom-left-radius: 2px 14px;
+	border-top-right-radius: 2px 14px;
+	border-bottom-right-radius: 2px 14px;
+}
+
+.po2:hover .pib {
+    position: relative;
+    left: 1px;
+    top: 1px;
+    width: 18px;
+    height: 28px;
+    background: #ffdddd;
+    box-shadow: 0 0 10px white, 0px 0px 50px #ff4444;
+	overflow: hidden;
+	border-top-left-radius: 2px 14px;
+	border-bottom-left-radius: 2px 14px;
+	border-top-right-radius: 2px 14px;
+	border-bottom-right-radius: 2px 14px;
+}
+</style>
+</head>
+<body>
+<div class="po2">
+<div class="po"><div class="pi"></div></div>
+<div class="po" style="left: 28px;"><div class="pi"></div></div>
+<div class="po" style="left: 56px;"><div class="pi"></div></div>
+<div class="po" style="left: 84px;"><div class="pi"></div></div>
+<div class="po" style="left: 112px;"><div class="pi"></div></div>
+<div class="po" style="left: 140px;"><div class="pi"></div></div>
+<div class="po" style="left: 168px;"><div class="pi"></div></div>
+<div class="po" style="left: 196px;"><div class="pib"></div></div>
+<div class="po" style="left: 224px;"></div>
+<div class="po" style="left: 252px;"></div>
+</div>
+<div style="text-align: center; margin-top: 20px;">Hover to show increase effect.</div>
+</body>
+</html>
