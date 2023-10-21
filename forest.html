@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body id="body">
+<script>
+var t = 0;
+function setColor() {
+    t++;
+    var hue = ((330 + Math.sin(t * 0.001) * 60) % 360);
+    var value = Math.ceil(50 + Math.sin(t * 0.0013) * 20);
+    document.getElementById("body").style.background = "hsl(" + hue + ", 100%, " + value + "%)";
+}
+setInterval(setColor, 10);
+</script>
+</body>
+</html>
